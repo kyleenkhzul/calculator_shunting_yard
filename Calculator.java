@@ -28,7 +28,7 @@ public class Calculator {
                     numberBuffer.setLength(0); // set the length of numberBuffer to 0
                 }
                 if (token == '(') {
-                    stack.push(token); // pushes left parantheses
+                    stack.push(token); // pushes left parentheses 
                 } else if (token == ')') {  
                     while (!stack.isEmpty() && stack.peek() != '(') { // while the stack is not empty and the next is not a left
                         output.append(stack.pop()).append(" "); // pop it and add a space 
